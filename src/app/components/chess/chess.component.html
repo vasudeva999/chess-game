@@ -1,0 +1,46 @@
+<!-- <div class="container"> -->
+ 
+    <div class="row">
+   
+      <div style="margin-left: 25.5%;" class="col-md-9" *ngFor="let row of grid; let indexOfelement = index;">
+        <div class="row">
+            <div class="col-md-1">
+                <img *ngIf="row[0][0]!='' " style="width: 80%; margin-top: 20%; margin-bottom: 29%; background-color: {{ row[0][1] }} " (click)="onClick(row[0], indexOfelement, 0)" src="assets/icons/{{row[0][0] }}">
+                <img *ngIf="row[0][0]=='' " style="visibility: hidden; width: 80%; margin-top: 20%; margin-bottom: 29%;" src="assets/icons/BlackPawn.svg">
+            </div>
+            <div class="col-md-1">
+                <img *ngIf="row[1][0]!='' " style="width: 80%; margin-top: 25%; margin-bottom: 30%; background-color: {{ row[1][1] }}" (click)="onClick(row[1], indexOfelement, 1)" src="assets/icons/{{row[1][0] }}">
+            </div>
+            <div class="col-md-1">
+                <img *ngIf="row[2][0]!='' " style="width: 80%; margin-top: 25%; margin-bottom: 30%; background-color: {{ row[2][1] }}" (click)="onClick(row[2], indexOfelement, 2)" src="assets/icons/{{row[2][0] }}">
+            </div>
+            <div class="col-md-1">
+                <img *ngIf="row[3][0]!=''" style="width: 80%; margin-top: 25%; margin-bottom: 30%; background-color: {{ row[3][1] }}" (click)="onClick(row[3], indexOfelement, 3)" src="assets/icons/{{row[3][0] }}">
+            </div>
+            <div class="col-md-1">
+                <img *ngIf="row[4][0]!='' " style="width: 80%; margin-top: 25%; margin-bottom: 30%; background-color: {{ row[4][1] }}" (click)="onClick(row[4], indexOfelement, 4)" src="assets/icons/{{row[4][0] }}">
+            </div>
+            <div class="col-md-1">
+                <img *ngIf="row[5][0]!='' " style="width: 80%; margin-top: 25%; margin-bottom: 30%; background-color: {{ row[5][1] }}" (click)="onClick(row[5], indexOfelement, 5)" src="assets/icons/{{row[5][0] }}">
+            </div>
+            <div class="col-md-1">
+                <img *ngIf="row[6][0]!='' " style="width: 80%; margin-top: 25%; margin-bottom: 30%; background-color: {{ row[6][1] }}" (click)="onClick(row[6], indexOfelement, 6)" src="assets/icons/{{row[6][0] }}">
+            </div>
+            <div class="col-md-1">
+                <img *ngIf="row[7][0]!='' " style="width: 80%; margin-top: 25%; margin-bottom: 30%; background-color: {{ row[7][1] }}" (click)="onClick(row[7], indexOfelement, 7)" src="assets/icons/{{row[7][0] }}">
+            </div>
+        </div>
+        
+      </div>
+   
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <button style="margin-left: 42%;" class="btn btn-primary" (click)="resetGrid()">Reset game</button>
+            <button style="margin-left: 2%;" class="btn btn-primary" (click)="removeDots()">Remove Dots</button>
+            <!-- <button style="margin-left: 2%;" class="btn btn-primary" (click)="test()">test game</button> -->
+          </div>
+    </div>
+   
+  <!-- </div> -->
